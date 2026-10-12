@@ -1,11 +1,3 @@
-const grades = [
-  { name: "Макар", score: 85 },
-  { name: "Денис", score: 92 },
-  { name: "Анна", score: 78 },
-  { name: "Даша", score: 88 },
-  { name: "Студент_X", score: 45 }
-];
-
 function addLetterGrade(data) {
     for (const student of data) {
         if (student.score >= 90) {
@@ -21,6 +13,5 @@ function addLetterGrade(data) {
     return data;
 }
 
-console.log(addLetterGrade(grades));
 
 module.exports = addLetterGrade;
